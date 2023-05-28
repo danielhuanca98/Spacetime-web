@@ -2,12 +2,12 @@ import { getUser } from '@/lib/auth'
 import Image from 'next/image'
 
 export default function Profile() {
-  const { name, avatarURl } = getUser()
+  const { name, avatarUrl } = getUser()
 
   return (
     <div className="flex items-center gap-3 text-left">
       <Image
-        src={avatarURl}
+        src={avatarUrl}
         width={40}
         height={40}
         alt=""
